@@ -1,7 +1,9 @@
 import React from "react";
+import styled from "styled-components";
+
 import Head from "next/head";
 import Navigation from "../components/Navigation.js";
-import styled from "styled-components";
+import TaskOverview from "../components/TaskOverview";
 
 const BodyWrapper = styled.div`
   background: #1a202c;
@@ -19,6 +21,7 @@ const Home = () => (
     </Head>
     <BodyWrapper>
       <Navigation />
+      <TaskOverview />
     </BodyWrapper>
   </>
 );
