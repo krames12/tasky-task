@@ -1,8 +1,13 @@
 import React from "react";
+import styled from "styled-components";
+
+const MainHeading = styled.h1`
+  margin-top: 0;
+`;
 
 const Navigation = () => (
   <header id="navigation">
-    <h1>Tasky Task</h1>
+    <MainHeading>Tasky Task</MainHeading>
   </header>
 );
 
