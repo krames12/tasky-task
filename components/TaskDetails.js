@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const TaskDetails = () => {
+const TaskDetails = ({ active }) => {
   return (
-    <Backdrop>
+    <Backdrop active={active}>
       <Modal data-testid="task-details-modal"></Modal>
     </Backdrop>
   );
@@ -18,8 +18,8 @@ const Modal = styled.div`
 `;
 
 const Backdrop = styled.div`
+  display: ${props => (props.active ? "flex" : "none")};
   position: absolute;
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
