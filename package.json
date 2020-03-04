@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "next": "9.2.2",
@@ -23,6 +25,7 @@
     "babel-jest": "^25.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "jest": "^25.1.0",
+    "jest-axe": "^3.3.0",
     "react-test-renderer": "^16.13.0"
   }
 }
