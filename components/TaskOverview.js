@@ -8,7 +8,7 @@ const TaskOverview = ({ columns }) => {
   return columns && columns.length ? (
     columns.map((column, index) => <TaskColumn key={index} {...column} />)
   ) : (
-    <p className="it-broke">
+    <p className="it-broke" data-testid="empty-overview">
       You don't have any columns, you dun did borked it 🐶
     </p>
   );
