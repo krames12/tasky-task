@@ -7,9 +7,11 @@ const TaskColumn = ({ title, taskList }) => {
   return (
     <Column>
       <ColumnTitle>{title}</ColumnTitle>
-      {taskList.map((task, index) => (
-        <Task key={index} title={task} />
-      ))}
+      {taskList && taskList.length ? (
+        taskList.map((task, index) => <Task key={index} title={task} />)
+      ) : (
+        <p>No current tasks</p>
+      )}
     </Column>
   );
 };

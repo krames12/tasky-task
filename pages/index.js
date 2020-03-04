@@ -14,6 +14,25 @@ const BodyWrapper = styled.div`
   font-family: sans-serif;
 `;
 
+const columns = [
+  {
+    title: "To Do",
+    taskList: ["This is a task", "This is a task", "This is a task"]
+  },
+  {
+    title: "In Progress",
+    taskList: ["This is a task"]
+  },
+  {
+    title: "In Review",
+    taskList: ["This is a task", "This is a task"]
+  },
+  {
+    title: "Done",
+    taskList: []
+  }
+];
+
 const Home = () => (
   <>
     <Head>
@@ -21,7 +40,7 @@ const Home = () => (
     </Head>
     <BodyWrapper>
       <Navigation />
-      <TaskOverview />
+      <TaskOverview columns={columns} />
     </BodyWrapper>
   </>
 );
