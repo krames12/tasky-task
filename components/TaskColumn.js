@@ -3,9 +3,7 @@ import styled from "styled-components";
 
 import Task from "./Task";
 
-const TaskColumn = ({ title }) => {
-  const taskList = ["This is a task", "This is a task", "This is a task"];
-
+const TaskColumn = ({ title, taskList }) => {
   return (
     <Column>
       <ColumnTitle>{title}</ColumnTitle>
